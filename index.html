@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopUpKu - Top Up Game Cepat & Murah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">⚡ TopUp<span>Ku</span></div>
+      <div class="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#game">Game</a>
+        <a href="#cara">Cara Top Up</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div>
+        <p class="badge">🔥 PROSES CEPAT • AMAN • TERPERCAYA</p>
+        <h1>Top Up Game<br><span>Gampang & Cepat</span></h1>
+        <p class="hero-text">Isi Diamond, UC, dan kebutuhan game favoritmu dengan proses sederhana.</p>
+        <a class="btn" href="#game">Mulai Top Up</a>
+      </div>
+      <div class="hero-card">
+        <div class="coin">💎</div>
+        <h3>Top Up Sekarang</h3>
+        <p>Mobile Legends • Free Fire • PUBG Mobile</p>
+      </div>
+    </section>
+
+    <section class="section" id="game">
+      <div class="section-title">
+        <p class="mini">PILIH GAME</p>
+        <h2>Game Favoritmu</h2>
+      </div>
+
+      <div class="games">
+        <article class="game-card">
+          <div class="game-icon ml">ML</div>
+          <h3>Mobile Legends</h3>
+          <p>Diamond Mobile Legends</p>
+          <button onclick="openTopup('Mobile Legends')">Top Up</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon ff">FF</div>
+          <h3>Free Fire</h3>
+          <p>Diamond Free Fire</p>
+          <button onclick="openTopup('Free Fire')">Top Up</button>
+        </article>
+        <article class="game-card">
+          <div class="game-icon pubg">PUBG</div>
+          <h3>PUBG Mobile</h3>
+          <p>UC PUBG Mobile</p>
+          <button onclick="openTopup('PUBG Mobile')">Top Up</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section steps" id="cara">
+      <div class="section-title">
+        <p class="mini">MUDAH & PRAKTIS</p>
+        <h2>Cara Top Up</h2>
+      </div>
+      <div class="step-grid">
+        <div><b>01</b><h3>Pilih Game</h3><p>Pilih game yang ingin kamu isi.</p></div>
+        <div><b>02</b><h3>Masukkan ID</h3><p>Isi User ID dan pilih nominal.</p></div>
+        <div><b>03</b><h3>Bayar</h3><p>Hubungi admin untuk pembayaran.</p></div>
+        <div><b>04</b><h3>Selesai</h3><p>Pesanan diproses dengan cepat.</p></div>
+      </div>
+    </section>
+
+    <section class="cta" id="kontak">
+      <h2>Siap Top Up?</h2>
+      <p>Pesan sekarang melalui WhatsApp admin.</p>
+      <a class="btn" href="https://wa.me/6281234567890" target="_blank">💬 Chat WhatsApp</a>
+      <small>Ganti nomor WhatsApp pada file index.html dengan nomor tokomu.</small>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeTopup()">×</button>
+      <p class="mini">FORM PESANAN</p>
+      <h2 id="selectedGame">Top Up</h2>
+      <label>User ID</label>
+      <input id="userId" placeholder="Contoh: 123456789">
+      <label>Nominal</label>
+      <select id="nominal">
+        <option>5 Diamond / UC</option>
+        <option>12 Diamond / UC</option>
+        <option>50 Diamond / UC</option>
+        <option>100 Diamond / UC</option>
+        <option>250 Diamond / UC</option>
+      </select>
+      <button class="btn full" onclick="orderWhatsApp()">Pesan via WhatsApp</button>
+    </div>
+  </div>
+
+  <footer>© 2026 TopUpKu. Semua hak dilindungi.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
